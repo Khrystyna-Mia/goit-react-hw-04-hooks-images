@@ -49,6 +49,12 @@ const Searchbar = ({ onSubmit }) => {
   );
 };
 
+Searchbar.propTypes = {
+  onSubmit: PropTypes.func.isRequired,
+};
+
+export default Searchbar;
+
 /* --------------------------------------------------- */
 
 // class Searchbar extends Component {
@@ -96,9 +102,3 @@ const Searchbar = ({ onSubmit }) => {
 //     );
 //   }
 // }
-
-Searchbar.propTypes = {
-  onSubmit: PropTypes.func.isRequired,
-};
-
-export default Searchbar;

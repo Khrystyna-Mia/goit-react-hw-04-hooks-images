@@ -40,6 +40,13 @@ const Modal = ({ onClose, url }) => {
   );
 };
 
+Modal.propTypes = {
+  url: PropTypes.string.isRequired,
+  onClose: PropTypes.func.isRequired,
+};
+
+export default Modal;
+
 /* -------------------------------------------- */
 
 // class Modal extends Component {
@@ -74,10 +81,3 @@ const Modal = ({ onClose, url }) => {
 //     );
 //   }
 // }
-
-Modal.propTypes = {
-  url: PropTypes.string.isRequired,
-  onClose: PropTypes.func.isRequired,
-};
-
-export default Modal;
